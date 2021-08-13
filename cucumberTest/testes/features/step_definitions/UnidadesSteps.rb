@@ -15,7 +15,7 @@ Quando('clicar no menu Unidades') do
    E('escolher filtros por facilidade') do
       @unidades.clicarFiltroFacilidade
    
-
+#carrega a lista com todas as facilicades e seleciona e opções dinâmicas
     @unidades.filtrosFacils.each do |facil|
       @valor = rand(1..3)
 
@@ -28,7 +28,7 @@ Quando('clicar no menu Unidades') do
 
       
     end
-  
+  #Verifica se a lista de unidades está vazia para poder relizar a validação do nome da unidade
     Então('selecionar a primeira unidade exibida') do
       
 
@@ -46,7 +46,7 @@ Quando('clicar no menu Unidades') do
     end
   
   
-  
+  #realiza a validação do nome da unidades
   Então('vou validar o nome da unidade selecionada') do
 
    

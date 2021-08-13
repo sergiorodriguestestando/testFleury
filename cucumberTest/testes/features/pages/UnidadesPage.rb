@@ -1,6 +1,9 @@
 class UnidadesPage < SitePrism::Page
     set_url ''
 
+    # Usado o padrão Page Objects para definir resposabilidades nas classes, ganhar reuso do fonte,
+    # definir  cada pagina com sua Page  mapeando seus respectivos elementos.
+
     elements :menuUnidade, 'div[class="buttoncomponentstyle__ButtonContentStyled-sc-11us3l0-3 bTUJDG"]'
     elements :filtrosFacils, 'div[class="checkbox-fieldcomponentstyle__CheckboxFieldStyled-sc-1mdajsk-0 DRDNI"]'
     elements :listaVerDetalhes,:xpath, '//div[text()="Ver detalhes"]'
