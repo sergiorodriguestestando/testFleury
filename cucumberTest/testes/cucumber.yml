@@ -1,0 +1,6 @@
+---
+default: --profile pretty -p html
+
+pretty:  --format pretty
+progress: --format progress
+html: --format html --out=reports/relatorio.html
